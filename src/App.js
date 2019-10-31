@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import BrandsLogo from './BrandsLogo';
 import SupportInfo from './SupportInfo';
-import FurnitureAfterHeaderFourLink from './FurnitureAfterHeaderFourLink';
 import FurnitureFeauturedCategories from './FurnitureFeauturedCategories';
 import FurnitureListLinkBannerRight from './FurnitureListLinkBannerRight';
 import FurnitureListLinkBannerLeft from './FurnitureListLinkBannerLeft';
@@ -26,7 +25,6 @@ function App() {
     const tabs = [
         <BrandsLogo title="Brands Logo" />,
         <SupportInfo title="Support Info" />,
-        <FurnitureAfterHeaderFourLink title="Furniture After Header Four Link" />,
         <FurnitureFeauturedCategories title="Furniture Feautured Categories" />,
         <FurnitureListLinkBannerRight title="Furniture List Link Banner Right" />,
         <FurnitureListLinkBannerLeft title="Furniture List Link Banner Left" />,
