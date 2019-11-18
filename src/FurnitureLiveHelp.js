@@ -42,7 +42,7 @@ class FurnitureLiveHelp extends BaseSectionConfig {
         super(props);
 
         this.state = this.getStateFromLocalStorage() || {
-            title: 'Need help? We`re available at 1800 000 6890  -  Email us atsupport@halothemes.com',
+            title: 'Need help? We`re available at <span>1800 000 6890</span>  -  Email us at <span>support@papathemes.com</span>',
             buttonText: 'Live help',
             buttonLink: '#'
         };
