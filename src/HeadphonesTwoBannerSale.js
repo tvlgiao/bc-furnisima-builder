@@ -14,7 +14,7 @@ class HeadphonesTwoBannerSaleFormItem extends React.Component {
     }
 
     render() {
-        const { img, alt, link } = this.props;
+        const { img, alt, link, infourl, infoalt } = this.props;
         return (
             <form>
                 <div className="form-group">
@@ -28,6 +28,14 @@ class HeadphonesTwoBannerSaleFormItem extends React.Component {
                 <div className="form-group">
                     <label htmlFor="link">Link</label>
                     <input type="text" className="form-control" id="link" name="link" value={link} onChange={this.handleChange} placeholder="Enter the link URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="infourl">Info image URL</label>
+                    <input type="text" className="form-control" id="infourl" name="infourl" value={infourl} onChange={this.handleChange} placeholder="Enter the info image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="infoalt">Info image ALT</label>
+                    <input type="text" className="form-control" id="infoalt" name="infoalt" value={infoalt} onChange={this.handleChange} placeholder="Enter the info image ALT" />
                 </div>
             </form>
         );
@@ -68,14 +76,18 @@ class HeadphonesTwoBannerSale extends BaseSectionConfig {
             heading: 'MORE DEPARTMENTS',
             items: [
                 { 
-                    img: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/more-1.png',
+                    img: 'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/more-1-custom.png',
                     link: '#',
-                    alt: ''
+                    alt: '',
+                    infourl:'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/more-1-info.png',
+                    infoalt: ''
                 },
                 { 
-                    img: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/more-2.png',
+                    img: 'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/more-2-custom.png',
                     link: '#',
-                    alt: ''
+                    alt: '',
+                    infourl:'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/more-2-info.png',
+                    infoalt: ''
                 },
             ]
         };

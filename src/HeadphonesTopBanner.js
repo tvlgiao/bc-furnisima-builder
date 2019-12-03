@@ -14,7 +14,7 @@ class HeadphonesTopBannerFormGeneral extends React.Component {
     }
 
     render() {
-        const { img1, alt1, link1, img2, alt2, link2, img3, alt3, link3, img4, alt4, link4, img5, alt5, link5, img6, alt6, link6, img7, alt7, link7, img8, alt8, link8  } = this.props;
+        const { img1, alt1, link1, info1url, info1alt, img2, alt2, link2, img3, alt3, link3, img4, alt4, link4, img5, alt5, link5, img6, alt6, link6, info6url, info6alt, img7, alt7, link7, img8, alt8, link8, info8url, info8alt  } = this.props;
         return (
             <form>
                 <div className="form-group">
@@ -28,6 +28,14 @@ class HeadphonesTopBannerFormGeneral extends React.Component {
                 <div className="form-group">
                     <label htmlFor="link1">Banner 1 link</label>
                     <input type="text" className="form-control" id="link1" name="link1" value={link1} onChange={this.handleChange} placeholder="Enter the banner 1 link" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="info1url">Banner 1 info image URL</label>
+                    <input type="text" className="form-control" id="info1url" name="info1url" value={info1url} onChange={this.handleChange} placeholder="Enter the banner 1 info URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="info1alt">Banner 1 info image ALT</label>
+                    <input type="text" className="form-control" id="info1alt" name="info1alt" value={info1alt} onChange={this.handleChange} placeholder="Enter the banner 1 info ALT" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="img2">Banner 2 image URL 370x288</label>
@@ -90,6 +98,14 @@ class HeadphonesTopBannerFormGeneral extends React.Component {
                     <input type="text" className="form-control" id="link6" name="link6" value={link6} onChange={this.handleChange} placeholder="Enter the banner 6 link" />
                 </div>
                 <div className="form-group">
+                    <label htmlFor="info6url">Banner 6 info image URL</label>
+                    <input type="text" className="form-control" id="info6url" name="info6url" value={info6url} onChange={this.handleChange} placeholder="Enter the banner 6 info URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="info6alt">Banner 6 info image ALT</label>
+                    <input type="text" className="form-control" id="info6alt" name="info6alt" value={info6alt} onChange={this.handleChange} placeholder="Enter the banner 6 info ALT" />
+                </div>
+                <div className="form-group">
                     <label htmlFor="img7">Banner 7 image URL 370x288</label>
                     <input type="text" className="form-control" id="img7" name="img7" value={img7} onChange={this.handleChange} placeholder="Enter the banner 7 image URL" />
                 </div>
@@ -113,6 +129,14 @@ class HeadphonesTopBannerFormGeneral extends React.Component {
                     <label htmlFor="link8">Banner 8 link</label>
                     <input type="text" className="form-control" id="link8" name="link8" value={link8} onChange={this.handleChange} placeholder="Enter the banner 8 link" />
                 </div>
+                <div className="form-group">
+                    <label htmlFor="info8url">Banner 8 info image URL</label>
+                    <input type="text" className="form-control" id="info8url" name="info8url" value={info8url} onChange={this.handleChange} placeholder="Enter the banner 8 info URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="info8alt">Banner 8 info image ALT</label>
+                    <input type="text" className="form-control" id="info8alt" name="info8alt" value={info8alt} onChange={this.handleChange} placeholder="Enter the banner 8 info ALT" />
+                </div>
             </form>
         );
     }
@@ -126,9 +150,11 @@ class HeadphonesTopBanner extends BaseSectionConfig {
         super(props);
 
         this.state = this.getStateFromLocalStorage() || {
-            img1: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/banner-1.png',
+            img1: 'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/banner-1-custom.png',
             alt1:'',
             link1:'#',
+            info1url: 'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/banner-1-info.png',
+            info1alt: '',
             img2: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/banner-2.png',
             alt2:'',
             link2:'#',
@@ -141,15 +167,19 @@ class HeadphonesTopBanner extends BaseSectionConfig {
             img5: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/banner-5.png',
             alt5:'',
             link5:'#',
-            img6: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/banner-6a.png',
+            img6: 'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/banner-6-custom.png',
             alt6:'',
             link6:'#',
+            info6url: 'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/banner-6-info.png',
+            info6alt: '',
             img7: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/banner-7.png',
             alt7:'',
             link7:'#',
-            img8: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/banner-8.png',
+            img8: 'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/banner-8-custom.png',
             alt8:'',
             link8:'#',
+            info8url: 'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/banner-8-info.png',
+            info8alt: '',
         };
     }
 
