@@ -73,7 +73,7 @@ class HeadphonesTwoBannerSale extends BaseSectionConfig {
         super(props);
 
         this.state = this.getStateFromLocalStorage() || {
-            heading: 'MORE DEPARTMENTS',
+            heading: 'More Departments',
             items: [
                 { 
                     img: 'https://cdn11.bigcommerce.com/s-1j4fquqwze/product_images/uploaded_images/more-1-custom.png',
