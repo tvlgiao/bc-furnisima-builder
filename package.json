@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -r \"https://github.com/tvlgiao/bc-feellio-builder.git\" -d build"
+    "deploy": "gh-pages -r \"https://github.com/tvlgiao/bc-furnisima-builder.git\" -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
