@@ -19,6 +19,7 @@ import HeadphonesTopBanner from './HeadphonesTopBanner';
 import HeadphonesBannerParallax from './HeadphonesBannerParallax';
 import HeadphonesTwoBannerSale from './HeadphonesTwoBannerSale';
 import HeadphonesSliderProfile from './HeadphonesSliderProfile';
+import FooterLogo from './FooterLogo';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <HeadphonesBannerParallax title="Headphones Banner Parallax" />,
         <HeadphonesTwoBannerSale title="Headphones Two Banner Sale" />,
         <HeadphonesSliderProfile title="Headphones Slider Profile" />,
+        <FooterLogo title="Footer Logo" />,
         
     ];
     return (
