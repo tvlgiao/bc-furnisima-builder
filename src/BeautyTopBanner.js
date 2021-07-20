@@ -14,12 +14,16 @@ class BeautyTopBannerFormGeneral extends React.Component {
     }
 
     render() {
-        const { img1, alt1, link1, img2, alt2, link2, img3, alt3, link3, img4, alt4, link4, img5, alt5, link5, img6, alt6, link6, img7, alt7, link7  } = this.props;
+        const { img1, desc1, alt1, link1, img2, desc2, alt2, link2, img3, desc3, alt3, link3, img4, desc4, alt4, link4, img5, desc5, alt5, link5, img6, desc6, alt6, link6, img7, desc7, alt7, link7  } = this.props;
         return (
             <form>
                 <div className="form-group">
                     <label htmlFor="img1">Banner 1 image URL 285x285</label>
                     <input type="text" className="form-control" id="img1" name="img1" value={img1} onChange={this.handleChange} placeholder="Enter the banner 1 image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="desc1">Banner 1 hover image URL 285x285</label>
+                    <input type="text" className="form-control" id="desc1" name="desc1" value={desc1} onChange={this.handleChange} placeholder="Enter the banner 1 hover image URL" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="alt1">Banner 1 image alt</label>
@@ -34,6 +38,10 @@ class BeautyTopBannerFormGeneral extends React.Component {
                     <input type="text" className="form-control" id="img2" name="img2" value={img2} onChange={this.handleChange} placeholder="Enter the banner 2 image URL" />
                 </div>
                 <div className="form-group">
+                    <label htmlFor="desc2">Banner 2 hover image URL 285x285</label>
+                    <input type="text" className="form-control" id="desc2" name="desc2" value={desc2} onChange={this.handleChange} placeholder="Enter the banner 2 hover image URL" />
+                </div>
+                <div className="form-group">
                     <label htmlFor="alt2">Banner 2 image alt</label>
                     <input type="text" className="form-control" id="alt2" name="alt2" value={alt2} onChange={this.handleChange} placeholder="Enter the banner 2 image alt" />
                 </div>
@@ -44,6 +52,10 @@ class BeautyTopBannerFormGeneral extends React.Component {
                 <div className="form-group">
                     <label htmlFor="img3">Banner 3 image URL 590x285</label>
                     <input type="text" className="form-control" id="img3" name="img3" value={img3} onChange={this.handleChange} placeholder="Enter the banner 3 image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="desc3">Banner 3 hover image URL 285x285</label>
+                    <input type="text" className="form-control" id="desc3" name="desc3" value={desc3} onChange={this.handleChange} placeholder="Enter the banner 3 hover image URL" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="alt3">Banner 3 image alt</label>
@@ -58,6 +70,10 @@ class BeautyTopBannerFormGeneral extends React.Component {
                     <input type="text" className="form-control" id="img4" name="img4" value={img4} onChange={this.handleChange} placeholder="Enter the banner 4 image URL" />
                 </div>
                 <div className="form-group">
+                    <label htmlFor="desc4">Banner 4 hover image URL 285x285</label>
+                    <input type="text" className="form-control" id="desc4" name="desc4" value={desc4} onChange={this.handleChange} placeholder="Enter the banner 4 hover image URL" />
+                </div>
+                <div className="form-group">
                     <label htmlFor="alt4">Banner 4 image alt</label>
                     <input type="text" className="form-control" id="alt4" name="alt4" value={alt4} onChange={this.handleChange} placeholder="Enter the banner 4 image alt" />
                 </div>
@@ -68,6 +84,10 @@ class BeautyTopBannerFormGeneral extends React.Component {
                 <div className="form-group">
                     <label htmlFor="img5">Banner 5 image URL 590x285</label>
                     <input type="text" className="form-control" id="img5" name="img5" value={img5} onChange={this.handleChange} placeholder="Enter the banner 5 image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="desc5">Banner 5 hover image URL 285x285</label>
+                    <input type="text" className="form-control" id="desc5" name="desc5" value={desc5} onChange={this.handleChange} placeholder="Enter the banner 5 hover image URL" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="alt5">Banner 5 image alt</label>
@@ -82,6 +102,10 @@ class BeautyTopBannerFormGeneral extends React.Component {
                     <input type="text" className="form-control" id="img6" name="img6" value={img6} onChange={this.handleChange} placeholder="Enter the banner 6 image URL" />
                 </div>
                 <div className="form-group">
+                    <label htmlFor="desc6">Banner 6 hover image URL 285x285</label>
+                    <input type="text" className="form-control" id="desc6" name="desc6" value={desc6} onChange={this.handleChange} placeholder="Enter the banner 6 hover image URL" />
+                </div>
+                <div className="form-group">
                     <label htmlFor="alt6">Banner 6 image alt</label>
                     <input type="text" className="form-control" id="alt6" name="alt6" value={alt6} onChange={this.handleChange} placeholder="Enter the banner 6 image alt" />
                 </div>
@@ -92,6 +116,10 @@ class BeautyTopBannerFormGeneral extends React.Component {
                 <div className="form-group">
                     <label htmlFor="img7">Banner 7 image URL 285x285</label>
                     <input type="text" className="form-control" id="img7" name="img7" value={img7} onChange={this.handleChange} placeholder="Enter the banner 7 image URL" />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="desc7">Banner 7 hover image URL 285x285</label>
+                    <input type="text" className="form-control" id="desc7" name="desc7" value={desc7} onChange={this.handleChange} placeholder="Enter the banner 7 hover image URL" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="alt7">Banner 7 image alt</label>
@@ -115,24 +143,31 @@ class BeautyTopBanner extends BaseSectionConfig {
 
         this.state = this.getStateFromLocalStorage() || {
             img1: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/beauty-1.png',
+            desc1: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==',
             alt1:'',
             link1:'#',
             img2: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/beauty-2.png',
+            desc2: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==',
             alt2:'',
             link2:'#',
             img3: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/beauty-3.png',
+            desc3: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==',
             alt3:'',
             link3:'#',
             img4: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/beauty-4a.png',
+            desc4: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==',
             alt4:'',
             link4:'#',
             img5: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/beauty-5a.png',
+            desc5: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==',
             alt5:'',
             link5:'#',
             img6: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/beauty-6.png',
+            desc6: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==',
             alt6:'',
             link6:'#',
             img7: 'https://cdn11.bigcommerce.com/s-2zaei19psd/product_images/uploaded_images/beauty-7a.png',
+            desc7: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==',
             alt7:'',
             link7:'#',
         };
